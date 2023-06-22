@@ -26,7 +26,7 @@ const schema = yup
 const Login = () => {
   const {
     control,
-    formState: { errors, isValid },
+    formState: { errors },
   } = useForm<IFormLogin>({
     resolver: yupResolver(schema),
     mode: "onBlur",
